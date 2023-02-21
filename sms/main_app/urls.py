@@ -130,4 +130,7 @@ urlpatterns = [
     path('student/view/result/', student_views.student_view_result,
          name='student_view_result'),
 
+     #api/serializers
+
+
 ]
