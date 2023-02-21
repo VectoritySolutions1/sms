@@ -89,7 +89,7 @@ class Staff(models.Model):
 
     def __str__(self):
         return self.admin.last_name + " " + self.admin.first_name
-
+        
 
 class Subject(models.Model):
     name = models.CharField(max_length=120)
@@ -194,3 +194,5 @@ def save_user_profile(sender, instance, **kwargs):
         instance.staff.save()
     if instance.user_type == 3:
         instance.student.save()
+
+
